@@ -40,3 +40,24 @@ set -U fish_color_command 81a1c1 # valid cmd
 set -U fish_cursor_default 'block'
 set -U fish_cursor_insert 'line'
 set -U fish_cursor_visual 'block'
+
+# Export fn
+function export
+  if [ $argv ] 
+    set var (echo $argv | cut -f1 -d=)
+    set val (echo $argv | cut -f2 -d=)
+    set -g -x $var $val
+  else
+    echo 'export var=value'
+  end
+end
+
+# Global vars
+set -g GOPATH (go env GOPATH)
+
+# Paths
+fish_add_path (go env GOPATH)
+fish_add_path '/etc/ssl/certs/ca-certificates.crt'
+
+# Tokens and secrets
+source ~/.tokens

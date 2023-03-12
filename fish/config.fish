@@ -8,12 +8,14 @@ end
 
 # Git workflow
 function gita
+  git pull
   git worktree add $argv[1] $argv[2]
   cd $argv[1]
   tmux new -s $argv[1]
 end
 
 function gitb
+  git pull
   git worktree add $argv[1] -b $argv[2]
   cd $argv[1]
   tmux new -s $argv[1]

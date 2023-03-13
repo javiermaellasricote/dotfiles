@@ -16,6 +16,7 @@ nnoremap g9 :diffget //3
 " Telescope
 nnoremap T :Telescope find_files<CR>
 nnoremap F :Telescope live_grep<CR>
+nnoremap ff /<C-r><C-w><CR> :Telescope grep_string<CR>
 
 " Substitute all with same name in file.
 nnoremap S :%s/<C-r><C-w>//g<Left><Left>
@@ -73,6 +74,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'rbong/vim-flog' " Git branch viewer, maybe it can be removed
+Plug 'ruanyl/vim-gh-line'
 
 " Cursor movement
 Plug 'christoomey/vim-tmux-navigator'

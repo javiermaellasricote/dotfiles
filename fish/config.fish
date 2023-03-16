@@ -54,8 +54,23 @@ function export
   end
 end
 
+# prompt design
+function _git_branch
+  echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
+end
+
+function fish_prompt
+  set -l white (set_color -o d8dee9)
+  set -l blue (set_color -o 81a1c1)
+
+  echo -n -s $white [$blue(basename (prompt_pwd))$white]-[$blue(_git_branch)$white] ' '
+end
+
 # Global vars
 set -g GOPATH (go env GOPATH)
+
+# Default text editor
+set -Ux EDITOR nvim
 
 # Paths
 fish_add_path (go env GOPATH)

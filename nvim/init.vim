@@ -133,9 +133,7 @@ let g:airline_theme='nord'
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
+  \ 'coc-rome',
   \ 'coc-json',
   \ 'coc-docker',
   \ ]

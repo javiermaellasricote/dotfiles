@@ -1,4 +1,5 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["typescript"],
   "languageserver": {
     "golang": {
       "command": "gopls",

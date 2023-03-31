@@ -134,10 +134,8 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-rome',
-  \ 'coc-eslint',
   \ 'coc-json',
   \ 'coc-docker',
-  \ 'coc-vetur',
   \ ]
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

@@ -129,6 +129,9 @@ set termguicolors
 colorscheme nord
 let g:airline_theme='nord'
 
+" Autoformatting
+autocmd BufWritePost *.ts !rome format --write %
+
 " COC CONFIG
 let g:coc_global_extensions = [
   \ 'coc-snippets',

@@ -9,7 +9,7 @@ nnoremap gg ggzz
 " vim-fugitive remaps
 command GS sp | 0G | 5
 command GC vertical Git commit -v
-command GP Git push | q
+" command GP Git push | q
 nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
 

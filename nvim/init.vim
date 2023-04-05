@@ -14,7 +14,7 @@ nnoremap g9 :diffget //3
 
 " Graphite remaps
 command GP !gt branch submit --no-interactive
-command GL !gt repo sync | gt upstack restack
+command GL !gt repo sync --restack --force --no-interactive
 command GJ !gt branch down
 command GK !gt branch up
 

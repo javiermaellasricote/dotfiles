@@ -9,9 +9,14 @@ nnoremap gg ggzz
 " vim-fugitive remaps
 command GS sp | 0G | 5
 command GC vertical Git commit -v
-" command GP Git push | q
 nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
+
+" Graphite remaps
+command GP !gt branch submit --no-interactive
+command GL !gt repo sync | gt upstack restack
+command GJ !gt branch down
+command GK !gt branch up
 
 " Telescope
 nnoremap T :Telescope find_files<CR>

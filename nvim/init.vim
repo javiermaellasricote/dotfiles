@@ -39,6 +39,9 @@ function MarkdownFunc()
 endfunction
 command MdMode exec MarkdownFunc()
 
+" Vue commands
+command VueSplit CocCommand volar.action.splitEditors
+
 " Basic display config
 set listchars=tab:¦.,trail:•
 set list
@@ -144,6 +147,8 @@ let g:coc_global_extensions = [
   \ 'coc-rome',
   \ 'coc-json',
   \ 'coc-docker',
+  \ '@yaegassy/coc-volar',
+  \ '@yaegassy/coc-volar-tools',
   \ ]
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

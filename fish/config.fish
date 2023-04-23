@@ -73,7 +73,8 @@ set -g GOPATH (go env GOPATH)
 set -Ux EDITOR nvim
 
 # Paths
-fish_add_path (go env GOPATH)
+fish_add_path (go env GOPATH)'/bin'
+fish_add_path (go env GOPATH)'/pkg'
 fish_add_path '/etc/ssl/certs/ca-certificates.crt'
 
 # Tokens and secrets

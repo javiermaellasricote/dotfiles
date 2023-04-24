@@ -68,6 +68,7 @@ end
 
 # Global vars
 set -g GOPATH (go env GOPATH)
+set -g PYTHON3_HOST_PROG /usr/bin/python3
 
 # Default text editor
 set -Ux EDITOR nvim

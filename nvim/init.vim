@@ -21,7 +21,7 @@ command GK !gt branch up
 " Telescope
 nnoremap T :Telescope find_files<CR>
 nnoremap F :Telescope live_grep<CR>
-nnoremap ff /<C-r><C-w><CR> :Telescope grep_string<CR>
+nnoremap ff * :Telescope grep_string<CR>
 
 " Substitute all with same name in file.
 nnoremap S :%s/<C-r><C-w>//g<Left><Left>

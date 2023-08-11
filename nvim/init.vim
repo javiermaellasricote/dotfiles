@@ -55,8 +55,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Basic packages
 Plug 'nvim-lua/plenary.nvim'
-Plug 'preservim/nerdcommenter'
 Plug 'neomake/neomake'
+Plug 'tpope/vim-commentary'
 
 " Theme and appearance
 Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
@@ -122,9 +122,8 @@ Plug 'lervag/vimtex'
 "Rust support
 Plug 'rust-lang/rust.vim'
 
-" Bazel support
-Plug 'google/vim-maktaba'
-Plug 'bazelbuild/vim-bazel'
+"Vue
+Plug 'posva/vim-vue'
 
 call plug#end()
 

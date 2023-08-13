@@ -72,6 +72,7 @@ set -g PYTHON3_HOST_PROG /usr/bin/python3
 
 # Default text editor
 set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 
 # Paths
 fish_add_path (go env GOPATH)'/bin'

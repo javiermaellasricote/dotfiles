@@ -125,6 +125,9 @@ Plug 'rust-lang/rust.vim'
 "Vue
 Plug 'posva/vim-vue'
 
+"Haskell
+Plug 'MrcJkb/haskell-tools.nvim', { 'branch': '1.x.x' }
+
 call plug#end()
 
 " Signify

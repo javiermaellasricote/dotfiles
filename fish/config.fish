@@ -81,3 +81,6 @@ fish_add_path '/etc/ssl/certs/ca-certificates.crt'
 
 # Tokens and secrets
 source ~/.tokens
+
+# Haskell path
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/javimaellas/.ghcup/bin # ghcup-env

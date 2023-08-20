@@ -33,7 +33,7 @@ set -U fish_color_autosuggestion d8dee9 # autocomplete
 set -U fish_color_comment ebcb8b
 set -U fish_color_param d8dee9
 set -U fish_color_error bf616a # invalid cmd
-set -U fish_color_end 3f37b3
+set -U fish_color_end 88c0d0
 set -U fish_color_redirection b48ead
 set -U fish_color_quote ebcb8b
 set -U fish_color_command 88c0d0 # valid cmd

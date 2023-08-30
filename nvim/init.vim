@@ -150,6 +150,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-docker',
   \ 'coc-rust-analyzer',
+	\ 'coc-sqlfluff',
   \ '@yaegassy/coc-volar',
   \ '@yaegassy/coc-volar-tools',
   \ ]

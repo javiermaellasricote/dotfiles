@@ -6,6 +6,10 @@ nnoremap j jzz
 nnoremap k kzz
 nnoremap gg ggzz
 
+" line numbers
+set number
+set relativenumber
+
 " vim-fugitive remaps
 command GS sp | 0G | 5
 command GC vertical Git commit -v

@@ -10,6 +10,10 @@ nnoremap gg ggzz
 set number
 set relativenumber
 
+" folding
+set foldmethod=indent
+set foldlevelstart=1
+
 " vim-fugitive remaps
 command GS sp | 0G | 5
 command GC vertical Git commit -v

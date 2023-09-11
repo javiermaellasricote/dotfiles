@@ -12,7 +12,7 @@ set relativenumber
 
 " folding
 set foldmethod=indent
-set foldlevelstart=1
+set foldlevelstart=0
 
 " vim-fugitive remaps
 command GS sp | 0G | 5

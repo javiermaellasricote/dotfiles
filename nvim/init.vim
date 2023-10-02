@@ -21,10 +21,10 @@ nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
 
 " Graphite remaps
-command GP !gt branch submit --no-interactive
-command GL !gt repo sync --restack --force --no-interactive
-command GJ !gt branch down
-command GK !gt branch up
+command GP !gt submit --no-interactive
+command GL !gt sync --restack --force --no-interactive
+command GJ !gt down
+command GK !gt up
 
 " Telescope
 nnoremap T :Telescope find_files<CR>

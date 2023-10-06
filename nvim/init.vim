@@ -27,6 +27,7 @@ command GJ !gt down
 command GK !gt up
 
 " Telescope
+autocmd! FileType TelescopeResults setlocal nofoldenable
 nnoremap T :Telescope find_files<CR>
 nnoremap F :Telescope live_grep<CR>
 nnoremap ff * :Telescope grep_string<CR>
@@ -86,6 +87,9 @@ Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Sessions
+Plug 'tpope/vim-obsession'
 
 " Git
 Plug 'tpope/vim-fugitive'

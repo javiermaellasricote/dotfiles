@@ -25,6 +25,8 @@
     "eisbn",
     "eisbns",
     "isbns",
+    "metaservice",
+    "navigate",
     "nbsi",
     "nbsis",
     "normalised",
@@ -37,9 +39,12 @@
     "serializers",
     "stmts",
     "testcontainers",
+    "to",
     "trpc",
+    "typegen",
     "undici",
     "unstub",
-    "vitest"
+    "vitest",
+    "xstate"
   ]
 }

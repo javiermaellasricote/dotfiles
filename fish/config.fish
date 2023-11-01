@@ -6,24 +6,29 @@ function fish_user_key_bindings
   fish_vi_key_bindings
 end
 
+# User confirmation
+function read_confirm
+  while true
+    read -l -P 'Do you want to continue? [y/N] ' confirm
+
+    switch $confirm
+      case Y y
+        return 0
+      case '' N n
+        return 1
+    end
+  end
+end
+
 # Git workflow
-function gita
-  git pull
-  git worktree add $argv[1] $argv[2]
-  cd $argv[1]
-  tmux new -s $argv[1]
-end
-
-function gitb
-  git pull
-  git worktree add $argv[1] -b $argv[2]
-  cd $argv[1]
-  tmux new -s $argv[1]
-end
-
-function gitrm
-  rm -rf $argv[1]
-  git worktree prune
+function squashDir
+	echo "Squashing changes within $(pwd)."
+	if read_confirm
+		git reset main --soft
+		git add .
+		git commit -m "$(_git_branch)"
+		git push -f
+	end
 end
 
 # Color scheme

@@ -21,8 +21,12 @@ nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
 
 " Graphite remaps
+function SyncRestackFunc()
+	:! gt sync --no-interactive
+	:! gt restack --no-interactive
+endfunction
 command GP !gt submit --no-interactive
-command GL !gt sync --restack --force --no-interactive
+command GL exec SyncRestackFunc()
 command GJ !gt down
 command GK !gt up
 

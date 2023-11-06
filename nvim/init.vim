@@ -157,6 +157,7 @@ let g:airline_theme='nord'
 
 " Autoformatting
 autocmd BufWritePost *.ts !rome format --write %
+autocmd BufWritePost *.sql exec :CocCommand sqlfluff.fix
 
 " COC CONFIG
 let g:coc_global_extensions = [

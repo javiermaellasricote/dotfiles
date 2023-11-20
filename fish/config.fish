@@ -83,6 +83,7 @@ set -Ux VISUAL nvim
 fish_add_path (go env GOPATH)'/bin'
 fish_add_path (go env GOPATH)'/pkg'
 fish_add_path '/etc/ssl/certs/ca-certificates.crt'
+fish_add_path $HOME'/.local/bin'
 
 # Tokens and secrets
 source ~/.tokens

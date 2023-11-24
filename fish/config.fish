@@ -21,14 +21,28 @@ function read_confirm
 end
 
 # Git workflow
-function squashDir
-	echo "Squashing changes within $(pwd)."
-	if read_confirm
-		git reset main --soft
-		git add .
-		git commit -m "$(_git_branch)"
-		git push -f
-	end
+function jj-new
+	git stash
+	git checkout main
+	git pull
+	git stash pop
+	git checkout -b $argv[1]
+	git add --all
+	git commit -m $argv[1]
+	gh pr create --draft --title $argv[1]
+end
+
+function jj-push
+	git reset main --soft
+	git add --all
+	git commit -m "$(_git_branch)"
+	git push -f
+end
+
+function jj-sync
+	git fetch origin main:main
+	git rebase -X theirs origin/main
+	git push -f
 end
 
 # Color scheme

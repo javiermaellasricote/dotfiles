@@ -47,6 +47,7 @@
     "pino",
     "plpgsql",
     "pnpm",
+    "posthog",
     "pricings",
     "rambdax",
     "serializers",

@@ -144,6 +144,9 @@ Plug 'posva/vim-vue'
 "Haskell
 Plug 'MrcJkb/haskell-tools.nvim', { 'branch': '1.x.x' }
 
+" AI
+Plug 'David-Kunz/gen.nvim'
+
 call plug#end()
 
 " Signify

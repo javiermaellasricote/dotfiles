@@ -41,7 +41,7 @@ end
 
 function jj-sync
 	git fetch origin main:main
-	git rebase -X theirs origin/main
+	git rebase origin/main
 	git push -f
 end
 

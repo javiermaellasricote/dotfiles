@@ -166,7 +166,7 @@ autocmd BufWritePost *.ts !biome format --write %
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
-  \ 'coc-rome',
+	\ 'coc-biome',
   \ 'coc-json',
   \ 'coc-docker',
   \ 'coc-rust-analyzer',

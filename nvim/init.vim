@@ -159,7 +159,7 @@ colorscheme nord
 let g:airline_theme='nord'
 
 " Autoformatting
-autocmd BufWritePost *.ts !biome format --write %
+autocmd BufWritePost *.ts !biome check --apply %
 " autocmd BufWritePost *.sql exec :CocCommand sqlfluff.fix
 
 " COC CONFIG

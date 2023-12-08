@@ -1,0 +1,9 @@
+[core]
+  excludeFile = ~/.config/git/ignore
+[user]
+	email = javi_mr@me.com
+	name = javimaellas
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true

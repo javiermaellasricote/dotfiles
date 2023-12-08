@@ -59,7 +59,7 @@ command VueSplit CocCommand volar.action.splitEditors
 set listchars=tab:¦.,trail:•
 set list
 
-" set expandtab " This will transform tabs into spaces.
+set expandtab " This will transform tabs into spaces.
 set tabstop=2
 set shiftwidth=2
 set laststatus=3

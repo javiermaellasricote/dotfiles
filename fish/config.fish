@@ -20,31 +20,6 @@ function read_confirm
   end
 end
 
-# Git workflow
-function jj-new
-	git stash
-	git checkout main
-	git pull
-	git stash pop
-	git checkout -b $argv[1]
-	git add --all
-	git commit -m $argv[1]
-	gh pr create --draft --title $argv[1]
-end
-
-function jj-push
-	git reset main --soft
-	git add --all
-	git commit -m "$(_git_branch)"
-	git push -f
-end
-
-function jj-sync
-	git fetch origin main:main
-	git rebase origin/main
-	git push -f
-end
-
 # Color scheme
 set -U fish_color_operator d8dee9
 set -U fish_color_escape d8dee9

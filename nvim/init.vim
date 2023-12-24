@@ -113,6 +113,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sago35/tinygo.vim'
+Plug 'joerdav/templ.vim'
 
 " Terraform 
 Plug 'hashivim/vim-terraform'
@@ -160,6 +161,7 @@ let g:airline_theme='nord'
 
 " Autoformatting
 autocmd BufWritePost *.ts !biome check --apply %
+autocmd BufWritePost *.templ !templ fmt %
 " autocmd BufWritePost *.sql exec :CocCommand sqlfluff.fix
 
 " COC CONFIG

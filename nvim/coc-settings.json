@@ -18,6 +18,13 @@
       "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
       "filetypes": ["go"]
+    },
+    "templ": {
+      "command": "templ",
+      "args": [
+        "lsp"
+      ],
+      "filetypes": ["templ"]
     }
   },
   "cSpell.userWords": [

@@ -32,8 +32,8 @@ command GK !gt up
 
 " Telescope
 autocmd! FileType TelescopeResults setlocal nofoldenable
-nnoremap T :Telescope find_files<CR>
-nnoremap F :Telescope live_grep<CR>
+nnoremap Y :Telescope find_files<CR>
+nnoremap U :Telescope live_grep<CR>
 nnoremap ff * :Telescope grep_string<CR>
 
 " Substitute all with same name in file.

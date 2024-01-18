@@ -15,8 +15,8 @@ set foldmethod=indent
 set foldlevelstart=0
 
 " vim-fugitive remaps
-command GS sp | 0G | 5
-command GC vertical Git commit -v
+command S sp | 0G | 5
+command C vertical Git commit -v
 nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
 
@@ -25,7 +25,7 @@ function SyncRestackFunc()
 	:! gt sync --no-interactive
 	:! gt restack --no-interactive
 endfunction
-command GP !gt submit --no-interactive
+command P !gt submit --stack
 command GL exec SyncRestackFunc()
 command GJ !gt down
 command GK !gt up

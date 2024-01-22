@@ -25,7 +25,7 @@ function SyncRestackFunc()
 	:! gt sync --no-interactive
 	:! gt restack --no-interactive
 endfunction
-command P !gt submit --stack
+command P !gt submit --no-interactive
 command GL exec SyncRestackFunc()
 command GJ !gt down
 command GK !gt up

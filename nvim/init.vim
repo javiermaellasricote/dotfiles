@@ -15,8 +15,8 @@ set foldmethod=indent
 set foldlevelstart=0
 
 " vim-fugitive remaps
-command S sp | 0G | 5
-command C vertical Git commit -v
+command L sp | 0G | 5
+command K vertical Git commit -v
 nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
 

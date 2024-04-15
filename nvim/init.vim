@@ -17,18 +17,9 @@ set foldlevelstart=0
 " vim-fugitive remaps
 command L sp | 0G | 5
 command K vertical Git commit -v
+command P !git push
 nnoremap g1 :diffget //2
 nnoremap g9 :diffget //3
-
-" Graphite remaps
-function SyncRestackFunc()
-	:! gt sync --no-interactive
-	:! gt restack --no-interactive
-endfunction
-command P !gt submit --no-interactive
-command GL exec SyncRestackFunc()
-command GJ !gt down
-command GK !gt up
 
 " Telescope
 autocmd! FileType TelescopeResults setlocal nofoldenable

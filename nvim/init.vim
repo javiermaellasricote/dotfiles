@@ -50,9 +50,17 @@ command VueSplit CocCommand volar.action.splitEditors
 set listchars=tab:¦.,trail:•
 set list
 
-set expandtab " This will transform tabs into spaces.
-set tabstop=2
-set shiftwidth=2
+set noexpandtab " Make sure that every file uses real tabs, not spaces
+set shiftround  " Round indent to multiple of 'shiftwidth'
+set smartindent " Do smart indenting when starting a new line
+set autoindent  " Copy indent from current line, over to the new line
+
+" Set the tab width
+let s:tabwidth=2
+exec 'set tabstop='    .s:tabwidth
+exec 'set shiftwidth=' .s:tabwidth
+exec 'set softtabstop='.s:tabwidth
+
 set laststatus=3
 
 call plug#begin('~/.config/nvim/plugged')

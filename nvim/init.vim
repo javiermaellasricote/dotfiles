@@ -34,18 +34,6 @@ nnoremap S :%s/<C-r><C-w>//g<Left><Left>
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" Activate markdown mode.
-function MarkdownFunc()
-  :Goyo
-  :Limelight
-  :MarkdownPreview
-  :set spell
-endfunction
-command MdMode exec MarkdownFunc()
-
-" Vue commands
-command VueSplit CocCommand volar.action.splitEditors
-
 " Basic display config
 set listchars=tab:¦.,trail:•
 set list
@@ -77,11 +65,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-signify'
 
-" Nerdtree
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 " Code checks
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -109,7 +92,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " Typesctript
 Plug 'HerringtonDarkholme/yats.vim'
 
-" Golang
+" Go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sago35/tinygo.vim'
 Plug 'joerdav/templ.vim'
@@ -119,33 +102,24 @@ Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
 
-" Flutter
-Plug 'dart-lang/dart-vim-plugin'
-
 " Markdown
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
 
 " Svelte
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
-"LaTeX support
+" LaTeX support
 Plug 'lervag/vimtex'
 
-"Rust support
+" Rust support
 Plug 'rust-lang/rust.vim'
 
-"Vue
+" Vue
 Plug 'posva/vim-vue'
 
-"Haskell
+" Haskell
 Plug 'MrcJkb/haskell-tools.nvim', { 'branch': '1.x.x' }
-
-" AI
-Plug 'David-Kunz/gen.nvim'
 
 call plug#end()
 

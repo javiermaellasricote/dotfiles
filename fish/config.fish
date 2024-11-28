@@ -39,13 +39,22 @@ set -U fish_cursor_visual 'block'
 
 # Export fn
 function export
-  if [ $argv ] 
+  if [ $argv ]
     set var (echo $argv | cut -f1 -d=)
     set val (echo $argv | cut -f2 -d=)
     set -g -x $var $val
   else
     echo 'export var=value'
   end
+end
+
+# URL encode strings
+function url_encode
+	if [ $argv ]
+		printf %s $argv|jq -sRr @uri
+	else
+		echo 'url_encode "string"'
+	end
 end
 
 # prompt design

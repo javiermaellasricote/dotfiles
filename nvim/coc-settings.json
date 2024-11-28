@@ -38,6 +38,8 @@
     "bibliotech",
     "bibliu",
     "booklist",
+    "composable",
+    "composables",
     "cond",
     "courserware",
     "curr",
@@ -86,6 +88,7 @@
     "upserting",
     "uri",
     "varchar",
+    "vite",
     "vitest",
     "xstate"
   ]

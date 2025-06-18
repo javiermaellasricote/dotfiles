@@ -134,6 +134,7 @@ let g:airline_theme='nord'
 
 " Autoformatting
 autocmd BufWritePost *.ts !biome check --apply %
+autocmd BufWritePost *.js !biome check --apply %
 autocmd BufWritePost *.templ !templ fmt %
 " autocmd BufWritePost *.sql exec :CocCommand sqlfluff.fix
 

@@ -1,1 +1,4 @@
 Session.vim
+.nvimlog
+
+**/.claude/settings.local.json

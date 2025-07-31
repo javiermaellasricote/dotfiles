@@ -74,8 +74,8 @@ set -g GOPATH (go env GOPATH)
 set -g PYTHON3_HOST_PROG /usr/bin/python3
 
 # Default text editor
-set -Ux EDITOR nvim
-set -Ux VISUAL nvim
+set -Ux EDITOR n
+set -Ux VISUAL n
 
 # Paths
 fish_add_path (go env GOPATH)'/bin'
@@ -89,3 +89,5 @@ source ~/.tokens
 
 # Haskell path
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /home/javimaellas/.ghcup/bin # ghcup-env
+
+dd-gitsign load-key | source

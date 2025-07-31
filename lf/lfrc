@@ -1,8 +1,8 @@
 #-------------------------------------------
 # Text files
 #-------------------------------------------
-ext xml|json|yml|tex|py|pl|rb|js|ts|sh|php|m[ark]d[own]|txt = nvim "$@"
-mime ^text = nvim "$@"
+ext xml|json|yml|tex|py|pl|rb|js|ts|sh|php|m[ark]d[own]|txt = n "$@"
+mime ^text = n "$@"
 
 # interpreter for shell commands
 set shell sh
@@ -49,7 +49,7 @@ map O $mimeopen --ask $f
 # text files and a file opener for the rest.
 cmd open &{{
     case $(file --mime-type -Lb $f) in
-        *) lf -remote "send $id \$nvim \$fx";;
+        *) lf -remote "send $id \$n \$fx";;
     esac
 }}
 

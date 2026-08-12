@@ -1,0 +1,12 @@
+nerdfont: true
+
+pre_remove:
+  - command -v bzl >/dev/null 2>&1 && bzl clean --expunge || true
+  - command -v bazel-prune-orphans >/dev/null 2>&1 && bazel-prune-orphans --delete --yes --quiet || true
+
+panes:
+  - command: "n -S"
+    focus: true
+  - split: horizontal
+    command: "opencode --port"
+    percentage: 20

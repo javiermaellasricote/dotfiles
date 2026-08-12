@@ -2,3 +2,5 @@ Session.vim
 .nvimlog
 
 **/.claude/settings.local.json
+
+go.work*
